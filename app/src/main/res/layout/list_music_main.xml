@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_height="70dp" android:padding="16dp"
+            android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp" android:background="@color/colorGrey" android:id="@+id/layoutLMM">
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" app:srcCompat="@drawable/ic_launcher_background"
+                android:id="@+id/imgArtLMM" android:scaleType="centerCrop" android:layout_gravity="center_vertical"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="40dp" android:gravity="center_vertical"
+                android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView
+                    android:text="Song Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/tvNameLMM" android:textSize="14sp"
+                    android:textColor="@android:color/white" android:textStyle="bold" android:singleLine="true"/>
+            <TextView
+                    android:text="artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/tvArtistLMM"
+                    android:textColor="@android:color/white" android:singleLine="true" android:textSize="12sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
